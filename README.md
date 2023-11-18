@@ -1,21 +1,26 @@
 # NYC Taxi Fare Prediction Using Databricks
 
 ## Overview
-This project focuses on predicting New York City taxi fares using advanced machine learning techniques. It leverages the power of Databricks and PySpark to process and analyze large datasets of taxi trips.
+This project aims to predict taxi fares in New York City using machine learning and deep learning techniques. The data is sourced from the New York City Taxi and Limousine Commission (TLC), which includes extensive records from yellow and green taxi cabs.
+
+## Dataset
+- **Source:** New York City Taxi and Limousine Commission (TLC)
+- **Scope:** Records from Jan 2019 to Apr 2022, including pick-up and drop-off dates/times, locations, distances, fares, and more.
+- **Yellow Cabs:** Iconic NYC taxis with comprehensive city coverage.
+- **Green Cabs:** Taxis operating in designated areas outside the central city.
 
 ## Objectives
-- **Accurate Fare Prediction:** Develop models to predict taxi fares with high precision, aiming to minimize the Root Mean Square Error (RMSE).
-- **Algorithm Optimization:** Utilize and refine Random Forest and Gradient-Boosted Trees Regressor models for better prediction accuracy.
-- **Deep Learning Integration:** Enhance fare predictions by incorporating deep learning techniques.
+- **Fare Prediction:** Develop accurate models to predict taxi fares using historical data.
+- **Data Challenges:** Address data type issues, such as the 'airport_fee' field in the yellow taxi dataset.
 
 ## Key Features
-- **Data Processing with Databricks:** Efficient handling and processing of large-scale taxi trip data using Databricks.
-- **Machine Learning Models:** Application of Random Forest and Gradient-Boosted Trees Regressor models using PySpark.
-- **Deep Learning Techniques:** Implementation of deep learning methods to improve prediction accuracy.
-- **Cyclical Feature Encoding:** Innovative use of cyclical feature encoding to capture time-series patterns in taxi fare data.
-- **Performance Metrics:** Rigorous evaluation of models using RMSE to measure prediction accuracy.
+- **Data Ingestion and Preparation:** Download and load datasets into Azure Blob Storage, followed by processing on Databricks.
+- **Machine Learning Models:** Utilize Random Forest and Gradient-Boosted Trees Regressor models using PySpark.
+- **Deep Learning Integration:** Apply deep learning techniques to enhance fare prediction accuracy.
+- **Cyclical Feature Encoding:** Use cyclical feature encoding for time-series data to capture temporal patterns in fares.
 
 ## Technologies Used
+- Azure Blob Storage
 - Databricks
 - Apache Spark (PySpark)
 - Machine Learning (Random Forest, Gradient-Boosted Trees)
@@ -23,7 +28,7 @@ This project focuses on predicting New York City taxi fares using advanced machi
 - Cyclical Feature Encoding
 
 ## Repository Contents
-- Data preprocessing and exploration notebooks
+- Data ingestion and preparation scripts
 - Machine learning model development and tuning notebooks
 - Deep learning model integration scripts
 - Evaluation and testing scripts
